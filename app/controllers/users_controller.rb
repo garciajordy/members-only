@@ -1,22 +1,22 @@
 class UsersController < ApplicationController
-    before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: %i[new create]
 
-    def new
-      @user = User.new
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to root_path
+    else
+      render :new
     end
+  end
 
-    def create
-      @user = User.new(user_params)
-      if @user.save
-        redirect_to root_path
-      else
-        render :new
-      end
-    end
+  private
 
-    private
-
-    def user_params
-      params.require(:user).permit(:name, :email, :encrypted_password)
-    end
+  def user_params
+    params.require(:user).permit(:name, :email, :encrypted_password)
+  end
 end

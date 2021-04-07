@@ -1,0 +1,22 @@
+<div class="container w-25 bg-light mt-5">
+    <h1>Create Post</h1>
+    <%= form_with model: @post do |form| %>
+                   
+    <div class="form-field">
+        <%= form.label :title, 'Title:', class: "d-block"%>
+        <%= form.text_field :title%>
+        <% @post.errors.full_messages_for(:title).each do |message|%>
+            <div class="alert alert-danger alert-dismissible fade show"><%= message %></div>
+            <% end %>
+    </div>
+    <div class="form-field">
+        <%= form.label :body, 'Body:', class: "d-block" %>
+        <%= form.text_field :body%>
+        <% @post.errors.full_messages_for(:body).each do |message|%>
+            <div class="alert alert-danger alert-dismissible fade show"><%= message %></div>
+            <% end %>
+    </div>
+
+    <%= form.submit class: 'btn btn-primary mt-2'%>
+    <% end %>
+</div>

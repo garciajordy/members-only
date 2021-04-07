@@ -4,11 +4,7 @@
 <% @posts.each do |post| %>
 <div class="card mr-3 mb-3" >
   <div class="card-body">
-<% if user_signed_in? %>
-   <% @user = User.find(post.user_id)%> 
-   <h5 class="card-title">  <%= @user.name%></h5>
-
-<% end%>
+<h5 class="card-title"><%= user_display(post) %></h5>
 <h4 class="card-subtitle mb-2 text-muted"><%= post.title%></h4>
 <p class="card-text"><%= post.body%></p>
   </div>

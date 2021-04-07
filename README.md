@@ -26,6 +26,10 @@ $ git clone git@github.com:garciajordy/members-only.git
 ```
 $ cd members-only
 ```
+> Install webpack
+```
+$ rails webpacker:install 
+```
 
 > Migrate the database
 

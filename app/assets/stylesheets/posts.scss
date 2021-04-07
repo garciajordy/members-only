@@ -1,6 +1,12 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: beige;
+}
+
 .card {
   width: 50%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
 }

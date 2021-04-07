@@ -1,8 +1,7 @@
 module PostsHelper
-    def user_display(post)
-     if user_signed_in?
+  def user_display(post)
     @user = User.find(post.user_id)
-    return @user.name
-    end
-    end
+
+    @user.name if user_signed_in?
+  end
 end

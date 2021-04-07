@@ -39,7 +39,7 @@ $ rails db:migrate
 $ rails server
 ```
 
-> In order to see all posts, create user:
+> In order to see all posts with authors, create user:
 
 ```
 $ http://localhost:3000/users/sign_up
@@ -67,9 +67,9 @@ $ http://localhost:3000
 
 **Donat**
 
-- Github: [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/donat)
-- Linkedin: [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/donat)
-- Twitter: [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/donat)
+- Github: [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uwadonat)
+- Linkedin: [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uwadonat)
+- Twitter: [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/uwahoroDonat)
 
 ## Contributing
 

@@ -4,7 +4,10 @@
 body {
   background-color: beige;
 }
-
+.navbar-split {
+  display: flex;
+  justify-content: space-between;
+}
 .card {
   width: 50%;
   background-color: rgb(255, 255, 255);
